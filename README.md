@@ -1,5 +1,7 @@
 # Hootsuite MCP Server
 
+<!-- mcp-name: io.github.asklokesh/hootsuite-mcp-server -->
+
 <div align="center">
 
 # Hootsuite Mcp Server
