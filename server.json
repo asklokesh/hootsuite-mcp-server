@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.asklokesh/hootsuite-mcp-server",
+  "description": "MCP server for Hootsuite API integration",
+  "title": "Hootsuite",
+  "repository": {
+    "url": "https://github.com/asklokesh/hootsuite-mcp-server",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "hootsuite-mcp-server",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "HOOTSUITE_API_KEY",
+          "description": "API Key for HOOTSUITE",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "HOOTSUITE_API_URL",
+          "description": "API URL for HOOTSUITE",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}
