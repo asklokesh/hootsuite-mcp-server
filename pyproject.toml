@@ -28,3 +28,6 @@ dev = [
 
 [project.scripts]
 hootsuite-mcp = "hootsuite_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hootsuite_mcp"]
